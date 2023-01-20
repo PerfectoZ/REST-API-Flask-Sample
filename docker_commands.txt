@@ -1,0 +1,4 @@
+docker build -t <image name> .
+docker run -p <required host>:<original host> <image name>
+docker run -dp <required host>:<original host> <image name>
+docker run -dp 5005:5000 -w /app -v "$(pwd):/app" flask-smorest-api
